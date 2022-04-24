@@ -1,12 +1,3 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
-
 #include <stdio.h>
 #include <math.h>
 
@@ -16,7 +7,7 @@ calc ()
   int input;
   int x, y, i, fact;
   printf
-    ("Enter what you want? \n+:1; \n -:2; \n *:3; \n /:4; \n !:5 \n pow:6 \n sin:7 \n cos:8 \n tan:9\n mod:10");
+    ("Enter what you want? \n+:1; \n -:2; \n *:3; \n /:4; \n !:5 \n pow:6 \n sin:7 \n cos:8 \n tan:9\n mod:10 \n sqr:11 \n cube:12 \n sqrt:13 \n ln:14 ");
   scanf (" \n %d %d %d", &input, &x, &y);
   if (input == 1)
     {
@@ -47,7 +38,7 @@ calc ()
     }
   else if (input == 6)
     {
-      printf ("%lf", pow (x, y));
+      printf ("%.1lf", pow (x, y));
     }
   else if (10 > input > 6)
     {
@@ -55,11 +46,11 @@ calc ()
       radian = x * (M_PI / 180);
       if (input == 7)
 	{
-	  printf ("%lf", sin (radian));
+	  printf ("%.2lf", sin (radian));
 	}
       if (input == 8)
 	{
-	  printf ("%lf", cos (radian));
+	  printf ("%.2lf", cos (radian));
 	}
       if (input == 9)
 	{
@@ -70,11 +61,26 @@ calc ()
     {
       printf ("%d", x % y);
     }
-
+  else if (input == 11)
+    {
+      printf ("%.1lf", pow (x, 2));
+    }
+  else if (input == 12)
+    {
+      printf ("%.1lf", pow (x, 3));
+    }
+  else if (input == 13)
+    {
+      printf ("%.1lf", sqrt (x));
+    }
+  else if (input == 14)
+    {
+      x = (double) x;
+      printf ("%.1f", log (x));
+    }
   else
     {
       printf ("Invalid Input! Please specify the correct number");
-      calc ();
     }
 }
 
