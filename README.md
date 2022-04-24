@@ -1,2 +1,2 @@
 # PPS_Miniproject
-This project involves creating a basic calculator using basic C functions imported from STDIO and Math.h header files. 
+This project involves creating a basic calculator using basic C functions imported from STDIO and Math.h header files. The calculator can perform various functionalities ranging from basic arithmetic operations to Factorial calculation, finding sin,cos,tan of various degrees,etc. The code for this project is written in a way that it ensures the user-friendly nature of the application, with high care for simplicity and gracefulness in carrying out the operations.
